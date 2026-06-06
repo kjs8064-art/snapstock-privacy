@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapStock (찰칵재고) - 개인정보처리방침</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background: #f8f9fa;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      font-size: 1.8em;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .app-name {
+      text-align: center;
+      color: #666;
+      margin-bottom: 10px;
+      font-size: 0.95em;
+    }
+    .effective-date {
+      text-align: center;
+      color: #888;
+      font-size: 0.85em;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.2em;
+      color: #2c3e50;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e9ecef;
+    }
+    h3 {
+      font-size: 1.05em;
+      color: #34495e;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      font-size: 0.95em;
+      color: #444;
+    }
+    p { margin-bottom: 10px; }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 4px; }
+    .contact-box {
+      background: #f1f3f5;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .contact-box p { margin-bottom: 4px; }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>개인정보처리방침</h1>
+    <p class="app-name">SnapStock (찰칵재고)</p>
+    <p class="effective-date">시행일: 2026년 6월 7일</p>
+
+    <p>SnapStock(이하 "앱")은 이용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본 개인정보처리방침은 앱이 수집하는 정보의 종류, 이용 목적, 보관 기간 및 이용자의 권리에 대해 안내합니다.</p>
+
+    <h2>1. 수집하는 개인정보 항목</h2>
+
+    <h3>1-1. 필수 수집 항목</h3>
+    <ul>
+      <li><strong>Google 계정 인증 정보</strong>: 이메일 주소, 표시 이름, 프로필 사진 URL (Firebase Authentication을 통한 로그인 시)</li>
+    </ul>
+
+    <h3>1-2. 서비스 이용 과정에서 자동 수집되는 정보</h3>
+    <ul>
+      <li><strong>앱 충돌 및 오류 정보</strong>: 기기 모델, OS 버전, 앱 버전, 충돌 로그 (Firebase Crashlytics)</li>
+    </ul>
+
+    <h3>1-3. 이용자가 직접 입력하는 정보</h3>
+    <ul>
+      <li>식재료 이름, 수량, 유통기한, 카테고리 등 재고 관리 데이터</li>
+      <li>카메라로 촬영한 영수증 이미지 (AI 분석 후 텍스트만 저장, 원본 이미지는 서버에 영구 저장되지 않음)</li>
+    </ul>
+
+    <h2>2. 개인정보의 이용 목적</h2>
+    <p>수집된 정보는 다음 목적으로만 사용됩니다.</p>
+    <ul>
+      <li>회원 식별 및 로그인 기능 제공</li>
+      <li>식재료 재고 관리 서비스 제공 (등록, 수정, 삭제, 동기화)</li>
+      <li>가족/룸메이트 간 냉장고 공유 기능</li>
+      <li>AI 기반 레시피 추천 (Google Gemini API 활용)</li>
+      <li>영수증 OCR 스캔을 통한 식재료 자동 등록</li>
+      <li>유통기한 알림 서비스</li>
+      <li>앱 안정성 개선 및 오류 수정 (충돌 분석)</li>
+    </ul>
+
+    <h2>3. 개인정보의 보관 및 파기</h2>
+    <ul>
+      <li>재고 데이터는 Firebase Firestore에 저장되며, 이용자가 계정을 삭제하거나 데이터를 직접 삭제할 때까지 보관됩니다.</li>
+      <li>충돌 로그는 Firebase Crashlytics에 90일간 보관 후 자동 삭제됩니다.</li>
+      <li>이용자가 회원 탈퇴를 요청할 경우, 관련 데이터는 요청일로부터 30일 이내에 파기합니다.</li>
+    </ul>
+
+    <h2>4. 개인정보의 제3자 제공</h2>
+    <p>앱은 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만 다음의 경우는 예외로 합니다.</p>
+    <ul>
+      <li>이용자가 사전에 동의한 경우</li>
+      <li>법령에 의해 요구되는 경우</li>
+    </ul>
+
+    <h2>5. 제3자 서비스 (위탁 처리)</h2>
+    <p>앱은 서비스 제공을 위해 다음 제3자 서비스를 이용합니다.</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> (Google LLC): 사용자 인증</li>
+      <li><strong>Cloud Firestore</strong> (Google LLC): 재고 데이터 저장 및 동기화</li>
+      <li><strong>Firebase Crashlytics</strong> (Google LLC): 앱 충돌 분석</li>
+      <li><strong>Google Gemini API</strong> (Google LLC): AI 레시피 추천, 영수증 OCR 처리</li>
+    </ul>
+    <p>각 서비스의 개인정보처리방침은 해당 서비스 제공자의 정책을 따릅니다.</p>
+
+    <h2>6. 이용자의 권리</h2>
+    <p>이용자는 언제든지 다음 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li>개인정보 열람, 수정, 삭제 요청</li>
+      <li>회원 탈퇴 및 데이터 삭제 요청</li>
+      <li>앱 내 설정에서 직접 데이터 관리 가능</li>
+    </ul>
+
+    <h2>7. 카메라 권한</h2>
+    <p>앱은 영수증 OCR 스캔 및 바코드 스캔을 위해 카메라 접근 권한을 요청합니다. 촬영된 이미지는 AI 분석 목적으로만 사용되며, 서버에 영구 저장되지 않습니다.</p>
+
+    <h2>8. 아동의 개인정보 보호</h2>
+    <p>앱은 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다. 만 14세 미만 아동이 개인정보를 제공한 사실을 알게 된 경우, 해당 정보를 즉시 삭제합니다.</p>
+
+    <h2>9. 개인정보처리방침의 변경</h2>
+    <p>본 방침이 변경되는 경우, 변경 사항은 이 페이지를 통해 공지되며 변경 시행일 이전에 고지합니다.</p>
+
+    <h2>10. 연락처</h2>
+    <div class="contact-box">
+      <p><strong>앱 이름:</strong> SnapStock (찰칵재고)</p>
+      <p><strong>개발자:</strong> NewSet</p>
+      <p><strong>이메일:</strong> kjs8064@gmail.com</p>
+    </div>
+
+    <footer>
+      &copy; 2026 SnapStock. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
