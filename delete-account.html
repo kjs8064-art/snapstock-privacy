@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>찰칵재고(SnapStock) 계정 및 데이터 삭제 요청</title>
+  <style>
+    body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #222; }
+    h1 { color: #7B6EF6; font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.8rem; }
+    .box { background: #f5f4ff; border: 1px solid #e0ddff; border-radius: 10px; padding: 16px 20px; }
+    code { background: #eee; padding: 2px 6px; border-radius: 4px; }
+    a { color: #7B6EF6; }
+    .muted { color: #666; font-size: 0.9rem; }
+    hr { border: 0; border-top: 1px solid #e5e5e5; margin: 2.5rem 0; }
+  </style>
+</head>
+<body>
+  <h1>찰칵재고(SnapStock) 계정 및 데이터 삭제</h1>
+  <p>앱 이름: <strong>찰칵재고 (SnapStock)</strong> · 개발자: <strong>NewSet</strong> · 문의: <a href="mailto:kjs8064@gmail.com">kjs8064@gmail.com</a></p>
+
+  <h2>방법 1. 앱에서 직접 삭제 (권장)</h2>
+  <div class="box">
+    <p>앱 실행 → <strong>더보기 → 설정 → 위험 구역 → "계정 삭제"</strong> → 확인.</p>
+    <p class="muted">확인을 누르면 계정과 개인 데이터 삭제가 시작되며 되돌릴 수 없습니다. 이 기기에 저장된 데이터는 즉시 지워지고, 서버 쪽 반영에는 시간이 걸릴 수 있습니다.</p>
+  </div>
+
+  <h2>방법 2. 이메일로 삭제 요청</h2>
+  <div class="box">
+    <p>앱에 접근할 수 없는 경우, 가입에 사용한 Google 계정 이메일로 아래 주소에 "계정 삭제 요청"을 보내주세요.</p>
+    <p>📧 <a href="mailto:kjs8064@gmail.com?subject=SnapStock%20계정%20삭제%20요청">kjs8064@gmail.com</a></p>
+    <p class="muted">가입 이메일과 요청 이메일이 같은지 확인하는 방식으로 본인 확인을 진행합니다. 계정 정보를 제3자에게 알려드리지 않습니다.</p>
+  </div>
+
+  <h2>처리 기간</h2>
+  <ul>
+    <li><strong>앱에서 직접 삭제(방법 1)</strong>: 확인 즉시 처리가 시작됩니다. 이 기기의 데이터는 바로 삭제되고, 서버 데이터 정리는 보통 몇 분 내에 끝나며 실패한 단계는 자동으로 재시도됩니다.</li>
+    <li><strong>이메일 요청(방법 2)</strong>: 접수 후 본인 확인을 거쳐 처리하며, <strong>요청일로부터 최대 30일 이내</strong>에 삭제를 완료합니다(통상 영업일 기준 7일 이내).</li>
+  </ul>
+
+  <h2>삭제되는 데이터</h2>
+  <ul>
+    <li>계정 정보(Google 로그인 프로필: 이메일·이름·고유 ID)</li>
+    <li>그룹(주방) 멤버십 및 알림 토큰</li>
+    <li>결제/광고제거 상태</li>
+    <li>이 기기에 저장된 재고·소비/폐기 이력, 앱이 만든 사진 캐시, 계정 관련 로컬 설정</li>
+  </ul>
+
+  <h2>공유 주방(그룹) 데이터는 어떻게 되나요?</h2>
+  <p>공유 주방에 다른 멤버와 함께 등록한 재고·이력 등 공동 데이터는 <strong>남은 멤버가 계속 사용할 수 있도록 그룹에 유지됩니다.</strong> 탈퇴 시 해당 그룹에서 내 멤버십과 이름 표시가 제거되며, 내가 그룹 관리자(소유자)였다면 <strong>남은 멤버 중 한 명에게 소유권이 자동으로 승계</strong>되어 그룹이 관리자 없이 남지 않습니다.</p>
+  <p>내가 <strong>그룹의 마지막 멤버였다면, 그 그룹과 그 안의 재고·이력 등 하위 데이터는 함께 삭제됩니다.</strong></p>
+  <p class="muted">개인 데이터는 삭제되지만 모든 항목이 즉시 사라진다고 안내드리지는 않습니다. 서버 반영에는 시간이 걸릴 수 있으며, 중간에 실패한 정리 작업은 자동으로 재시도됩니다.</p>
+
+  <h2>보존 데이터</h2>
+  <p>아래를 제외하고, 삭제 요청 시 위 데이터는 보관하지 않습니다.</p>
+  <ul>
+    <li><strong>남은 멤버가 있는 공유 주방의 공동 데이터</strong>(위 항목 참조) — 남은 멤버의 서비스 이용을 위해 그룹에 유지됩니다.</li>
+    <li><strong>결제 기록</strong> — 광고 제거 등 인앱 결제 내역은 <strong>Google Play가 보관·관리</strong>합니다. 앱은 계정 삭제 시 자체 저장한 결제/광고제거 상태를 함께 삭제하며, 별도의 카드번호 등 결제수단 정보는 저장하지 않습니다. 법령상 보관 의무가 있는 기록이 있는 경우 해당 법정 기간 동안만 보관한 뒤 파기합니다.</li>
+    <li><strong>충돌(오류) 로그</strong> — Firebase Crashlytics에 수집된 익명 진단 로그는 수집일로부터 <strong>90일 후 자동 삭제</strong>됩니다.</li>
+  </ul>
+
+  <p class="muted">개인정보처리방침: <a href="https://kjs8064-art.github.io/snapstock-privacy/">여기</a></p>
+  <p class="muted">최종 수정일: 2026년 7월 23일</p>
+
+  <hr />
+
+  <h1 lang="en">SnapStock — Account &amp; Data Deletion</h1>
+  <div lang="en">
+    <p>App: <strong>SnapStock (찰칵재고)</strong> · Developer: <strong>NewSet</strong> · Contact: <a href="mailto:kjs8064@gmail.com">kjs8064@gmail.com</a></p>
+
+    <h2>Option 1. Delete in the app (recommended)</h2>
+    <div class="box">
+      <p>Open the app → <strong>More → Settings → Danger Zone → "Delete Account"</strong> → confirm.</p>
+      <p class="muted">Confirming starts deletion of your account and personal data and cannot be undone. Data stored on this device is erased right away; server-side changes may take some time to apply.</p>
+    </div>
+
+    <h2>Option 2. Request deletion by email</h2>
+    <div class="box">
+      <p>If you cannot access the app, email a "SnapStock account deletion request" from the Google account address you signed up with.</p>
+      <p>📧 <a href="mailto:kjs8064@gmail.com?subject=SnapStock%20account%20deletion%20request">kjs8064@gmail.com</a></p>
+      <p class="muted">We verify your identity by checking that the requesting address matches the address you signed up with. We never disclose account details to third parties.</p>
+    </div>
+
+    <h2>Processing time</h2>
+    <ul>
+      <li><strong>In-app deletion (Option 1)</strong>: starts immediately on confirmation. On-device data is erased right away; server-side cleanup usually finishes within minutes, and any failed step is retried automatically.</li>
+      <li><strong>Email request (Option 2)</strong>: after identity verification, deletion is completed <strong>within 30 days of the request at the latest</strong> (typically within 7 business days).</li>
+    </ul>
+
+    <h2>What is deleted</h2>
+    <ul>
+      <li>Account information (Google sign-in profile: email, name, unique ID)</li>
+      <li>Group (kitchen) membership and notification tokens</li>
+      <li>Purchase / ad-free status</li>
+      <li>Inventory and consumption/disposal history stored on this device, the app-created photo cache, and account-related local settings</li>
+    </ul>
+
+    <h2>What happens to shared kitchen (group) data?</h2>
+    <p>Inventory, history, and other data you added together with other members <strong>stays with the group so the remaining members can keep using it.</strong> Your membership and name are removed from that group, and if you were the group's owner, <strong>ownership is automatically handed over to one of the remaining members</strong>, so no group is left without an owner.</p>
+    <p>If you were the <strong>last member of a group, that group and the data inside it — inventory, history, and other sub-records — are deleted along with it.</strong></p>
+    <p class="muted">Your personal data is deleted, but we do not claim that every item disappears instantly. Server-side changes may take some time, and any cleanup step that fails midway is retried automatically.</p>
+
+    <h2>Retained data</h2>
+    <p>Except for the items below, we do not keep the data listed above after a deletion request.</p>
+    <ul>
+      <li><strong>Shared kitchen data with remaining members</strong> (see above) — kept with the group so the remaining members can keep using the service.</li>
+      <li><strong>Purchase records</strong> — in-app purchase history (e.g. ad removal) is <strong>held and managed by Google Play</strong>. We delete the purchase / ad-free status we store ourselves when the account is deleted, and we never store payment instrument details such as card numbers. Where the law requires us to retain a record, we keep it only for the statutory period and then destroy it.</li>
+      <li><strong>Crash logs</strong> — anonymous diagnostic logs collected by Firebase Crashlytics are <strong>deleted automatically 90 days</strong> after collection.</li>
+    </ul>
+
+    <p class="muted">Privacy policy: <a href="https://kjs8064-art.github.io/snapstock-privacy/">here</a></p>
+    <p class="muted">Last updated: July 23, 2026</p>
+  </div>
+</body>
+</html>
